@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form method="post" action="/update/<%= Nama.id %>">
+        <div>
+            <label>Nama:</label>
+            <input type="text" name="nama" value="<%= Nama.nama %>"/>
+        </div>
+        <div>
+            <label>E-mail:</label>
+            <input type="email" name="email" value="<%= Nama.email %>" />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" value="<%= Nama.password %>" />
+        </div>
+       
+        <div><input type="submit" value="Update"></div>
+
+    </form>
+</body>
+</html>
